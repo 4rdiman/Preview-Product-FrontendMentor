@@ -24,6 +24,7 @@ main{
     border-radius: 1rem;
     display: flex;
     background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(57, 121, 98, 0.4) 5px 5px, rgba(57, 121, 98, 0.3) 10px 10px, rgba(57, 121, 98, 0.2) 15px 15px, rgba(57, 121, 98, 0.1) 20px 20px, rgba(57, 121, 98, 0.05) 25px 25px;
 }
 
 img{
@@ -116,6 +117,7 @@ button:active{
     .container{
         display:grid;
         width: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     img.desktop-image{
