@@ -17,7 +17,6 @@ body{
 }
 
 main{
-    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,13 +25,16 @@ main{
 
 .container{
     width: 500px;
-    border: 1px solid;
+    border-radius: 1rem;
     display: flex;
+    background-color: hsl(0, 0%, 100%);
 }
 
 img{
     width: 100%;
     height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .text-content{
@@ -46,50 +48,91 @@ img{
 .title{
     color: hsl(228, 12%, 48%);
     letter-spacing: 0.3rem;
-    border: 1px solid;
     margin-bottom: 20px;
 
 }
 
 .name{
     font-size: 2rem;
-    border: 1px solid;
+    font-family: 'Fraunces', serif;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .description{
     color: hsl(228, 12%, 48%);
-    border: 1px solid;
     margin-bottom: 20px;
 }
 
+.price{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .price p{
-    display:inline;
+    font-family: 'Fraunces', serif;
+}
+
+.new-price{
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+
+    background-color: hsl(158, 36%, 37%);
+    color:white;
+    font-weight: 700;
+}
+
+button:hover, button:focus{
+    background-color: hsla(158, 36%, 27%);
+    
 }
 
 @media (max-width:500px){
     main{
-        border: 1px solid;
+        height: 650px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%; 
+        justify-content: center;
     }
-
     .container{
-        display: block;
-        width: 300px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .mobile-image{
-        width: 100%;
-    }
-
-    .text-content{
+        display:grid;
+        width: 350px;
         border: 1px solid;
-        width: 270px;
+        /* width: fit-content; */
+
+    }
+
+    picture img.desktop-image{
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: none;
+    }
+
+    .name{
+        margin-right: 2rem;
+    }
+
+    .description{
+        margin-right: 1.5rem;
+    }
+    button{
+        width: 89%;
+        
     }
 }
