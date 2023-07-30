@@ -19,9 +19,13 @@
   <main>
 
     <div class="container">
-      <div class="image-content">
-        <img src="images/image-product-desktop.jpg" alt="The Product">
-      </div>
+      
+    <picture>
+      <source media="(max-width: 500px)" srcset="images/image-product-mobile.jpg" class="mobile-image">
+      <img src="images/image-product-desktop.jpg" alt="The Product">
+    </picture>
+    
+      
     <div class="text-content">
       <p class="title">PERFUME</p>
 
