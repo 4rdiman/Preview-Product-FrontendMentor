@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat&display=swap');
 
-/*  font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif;*/
-
+/* css reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* container */
 body{
     background-color: hsl(30, 38%, 92%);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 main{
@@ -45,6 +41,7 @@ img{
     width: 100%;
 }
 
+/* content */
 .title{
     color: hsl(228, 12%, 48%);
     letter-spacing: 0.3rem;
@@ -87,6 +84,7 @@ img{
     color: hsl(228, 12%, 48%);;
 }
 
+/* button */
 button{
     width: 100%;
     padding: 10px;
@@ -107,6 +105,7 @@ button:active{
     background-color: hsla(158, 36%, 35%);
 }
 
+/* responsive for mobile, Insya Allah */
 @media (max-width:500px){
     main{
         height: 650px;
